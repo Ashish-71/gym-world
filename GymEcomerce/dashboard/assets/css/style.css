@@ -1198,7 +1198,7 @@ aside.left-panel:hover {
 }
 
 .right-panel .navbar-brand img {
-    max-width: 145px
+    max-width: 43px
 }
 
 .right-panel .navbar-brand.hidden {
@@ -1625,8 +1625,17 @@ header .form-inline .search-form.close {
 
 .card .box-title {
     font-weight: 600;
-    font-size: 1em;
+    font-size: 20px;
     padding: 5px 0
+}
+.card .box-link {
+    font-weight: 600;
+    font-size: 16px;
+    padding: 5px 0
+}
+.card .box-link a {
+    color: #000;
+    text-decoration: underline;
 }
 
 .card .weather-title.box-title {

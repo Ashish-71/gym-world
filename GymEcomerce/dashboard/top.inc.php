@@ -34,13 +34,19 @@ if(isset($_SESSION['ADMIN_LOGIN']) && $_SESSION['ADMIN_LOGIN']!=''){
                <ul class="nav navbar-nav">
                   <li class="menu-title">Menu</li>
                   <li class="menu-item-has-children dropdown">
-                     <a href="#" > Department Master</a>
+                     <a href="categories.php" > categories Master   </a>
                   </li>
                   <li class="menu-item-has-children dropdown">
-                     <a href="#" > Leave Type Master</a>
+                     <a href="product.php" > product Master </a>
                   </li>
 				  <li class="menu-item-has-children dropdown">
-                     <a href="#" > Employee Master</a>
+                     <a href="#" > order master </a>
+                  </li>
+                  <li class="menu-item-has-children dropdown">
+                     <a href="product.php" > user master </a>
+                  </li>
+                  <li class="menu-item-has-children dropdown">
+                     <a href="product.php" > contact us</a>
                   </li>
                </ul>
             </div>
@@ -50,7 +56,7 @@ if(isset($_SESSION['ADMIN_LOGIN']) && $_SESSION['ADMIN_LOGIN']!=''){
          <header id="header" class="header">
             <div class="top-left">
                <div class="navbar-header">
-                  <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Logo"></a>
+                  <a class="navbar-brand" href="index.html"><img src="../images/logo.jpg" alt="Logo"></a>
                   <a class="navbar-brand hidden" href="index.html"><img src="images/logo2.png" alt="Logo"></a>
                   <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
                </div>
