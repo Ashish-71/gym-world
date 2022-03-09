@@ -46,7 +46,7 @@ if(isset($_SESSION['ADMIN_LOGIN']) && $_SESSION['ADMIN_LOGIN']!=''){
                      <a href="product.php" > user master </a>
                   </li>
                   <li class="menu-item-has-children dropdown">
-                     <a href="product.php" > contact us</a>
+                     <a href="contact_us.php" > contact us</a>
                   </li>
                </ul>
             </div>
