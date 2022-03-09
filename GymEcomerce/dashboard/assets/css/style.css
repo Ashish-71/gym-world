@@ -613,7 +613,12 @@ canvas {
 .order-table .badge-pending {
     background: #fb9678
 }
-
+.order-table .badge-delete {
+    background: red;
+}
+.order-table .badge-edit {
+    background: #33A;
+}
 .messenger-box {
     padding-top: 15px
 }
@@ -1636,6 +1641,9 @@ header .form-inline .search-form.close {
 .card .box-link a {
     color: #000;
     text-decoration: underline;
+}
+.badge a{
+    color: #fff;
 }
 
 .card .weather-title.box-title {
