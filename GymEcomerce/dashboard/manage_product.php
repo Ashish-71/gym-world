@@ -69,6 +69,9 @@ if(isset($_POST['submit'])){
          $msg="Product is already exist";
    }
    }
+   if($_FILES['image']['type']!='' && ($_FILES['image']['type']!='image/png' || $_FILES['image']['type']!='image/jpg' || $_FILES['image']['type']!='image/jpeg')){
+$msg="Please enter valid image formate";
+   }
    if($msg==''){
       if (isset($_GET['id']) && $_GET['id']!=''){
          if($_FILES['image']['name']!=''){
