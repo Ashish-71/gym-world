@@ -111,7 +111,7 @@ require('top.php');
                     <div class="row">
                         <div class="product__list clearfix mt--30">
                             <?php
-                                $get_product=get_product($con,'latest',4);
+                                $get_product=get_product($con,4);
                                 foreach($get_product as $list){
                             ?>
                             <!-- Start Single Category -->
