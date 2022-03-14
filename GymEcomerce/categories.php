@@ -2,6 +2,7 @@
 require('top.php');
 // below function is for showing the clicked categories item
 $cat_id=mysqli_real_escape_string($con,$_GET['id']);
+$get_product=get_product($con,'',$cat_id);
 ?>
 
 
@@ -15,7 +16,7 @@ $cat_id=mysqli_real_escape_string($con,$_GET['id']);
                         <div class="col-xs-12">
                             <div class="bradcaump__inner">
                                 <nav class="bradcaump-inner">
-                                  <a class="breadcrumb-item" href="index.html">Home</a>
+                                  <a class="breadcrumb-item" href="index.php">Home</a>
                                   <span class="brd-separetor"><i class="zmdi zmdi-chevron-right"></i></span>
                                   <span class="breadcrumb-item active">Products</span>
                                 </nav>
@@ -30,6 +31,7 @@ $cat_id=mysqli_real_escape_string($con,$_GET['id']);
         <section class="htc__product__grid bg__white ptb--100">
             <div class="container">
                 <div class="row">
+                    <?php if(count($get_product)>0){?>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="htc__product__rightidebar">
                             <div class="htc__grid__top">
@@ -51,14 +53,14 @@ $cat_id=mysqli_real_escape_string($con,$_GET['id']);
                                         <!-- Start Single Product -->
                                         <?php
                                         
-                                $get_product=get_product($con,'',$cat_id);
+                                
                                 foreach($get_product as $list){
                             ?>
                             <!-- Start Single Category -->
                             <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
                                 <div class="category">
                                     <div class="ht__cat__thumb">
-                                        <a href="product.php?=<?php echo $list['id'] ?>">
+                                        <a href="product.php?id=<?php echo $list['id'] ?>">
                                             <img src="media/product/<?php echo $list['image'] ?>" alt="product images">
                                         </a>
                                     </div>
@@ -85,6 +87,10 @@ $cat_id=mysqli_real_escape_string($con,$_GET['id']);
                     </div>
                    
                     </div>
+                    <?php }else{
+                         echo "Data not found";
+                     }
+                      ?>
                 </div>
             </div>
         </section>

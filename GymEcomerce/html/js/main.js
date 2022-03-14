@@ -431,6 +431,25 @@
 
 })(jQuery);
 
+// below function is for send data od contact page into databse
+// validation
+function send_message(){
+    var name=jQuery("#name").val();
+    var email=jQuery("#email").val();
+    var mobile=jQuery("#mobile").val();
+    var message=jQuery("#message").val();
+    var is_error="";
+    if(name==""){
+        alert('please enter your name');
+    }else if(email==""){
+        alert('please enter your email');
+    }else if(mobile==""){
+        alert('please enter your mobile number');
+    }else if(message==""){
+        alert('please enter your message');
+    }else{
 
+    }
+}
 
 

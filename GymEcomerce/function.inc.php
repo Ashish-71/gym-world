@@ -10,14 +10,24 @@ function prx($arr){
     print_r($arr);
     die();
 }
-function get_product($con,$limit='',$cat_id=''){
-    $sql="select * from product where status=1";
+function get_safe_value($con,$str){
+    if($str!='')
+    $str=trim($str);
+    return mysqli_real_escape_string($con,$str);
+}
+
+function get_product($con,$limit='',$cat_id='',$product_id=''){
+    $sql="select product.*,categories.categories from product,categories where product.status=1";
     if($cat_id!=''){
-        $sql.=" and categories_id=$cat_id ";
+        $sql.=" and product.categories_id=$cat_id ";
     }
-    $sql.="  order by id desc";
+    if($product_id!=''){
+        $sql.=" and product.id=$product_id ";
+    }
+    $sql.=" and product.categories_id=categories.id ";
+    $sql.="  order by product.id desc";
     if($limit!=''){
-        $sql.="  limit $limit";
+        $sql.=" limit $limit";
     }
     $res=mysqli_query($con,$sql);
     $data=array();  
