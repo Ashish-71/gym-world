@@ -66,8 +66,9 @@ $get_product=get_product($con,'','',$product_id);
                                             <li><a href="#"><?php echo $get_product['0']['categories'] ?>,</a></li>
                                         </ul>
                                     </div>
-                                    
+                               
                                     </div>
+                                    <a class="fr__btn" href="#">Add to cart</a>
                                 </div>
                             </div>
                         </div>
