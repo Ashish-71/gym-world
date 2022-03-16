@@ -94,8 +94,14 @@ while($row=mysqli_fetch_assoc($cat_res)){
                             <div class="col-md-3 col-lg-2 col-sm-4 col-xs-4">
                                 <div class="header__right">
                                     <div class="header__account">
-                                        <a href="login.php">Login/Register</i></a>
-                                    </div>
+                                    <?php if(isset($_SESSION['email'])){
+                                        echo '<a href="php/logout.php">Logout</i></a>';
+                                        }else{
+                                            echo '<a href="login.php">Login/Register</i></a>';
+                                        }?>
+                                        </div>
+                                     
+                                      
                                     <div class="htc__shopping__cart">
                                         <a class="cart__menu" href="#"><i class="icon-handbag icons"></i></a>
                                         <a href="#"><span class="htc__qua">0</span></a>
