@@ -40,6 +40,17 @@ if(isset($_POST['login'])) {
             $inactive = "Sorry your id has been disabled";
             header('location: ../login.php?inactive='. $inactive);
         }
+        $res=mysqli_query00($con,"select * from users where email='$email'");
+        $check_user=mysqli_num_rows($res);
+        if($check_user>0){
+            $row=mysqli_fetch_assoc($res);
+            $_SESSION['USER_LOGIN']='yes';
+            $_SESSION['USER_ID']='id';
+            $_SESSION['USER_NAME']='name';
+            echo "valid";
+        }else{
+            alert: 'not valid';
+        }
     
    
 }
