@@ -58,7 +58,27 @@ $get_product=get_product($con,'','',$product_id);
                                 <p class="pro__info"><?php echo $get_product['0']['short_desc'] ?></p>
                                 <div class="ht__pro__desc">
                                     <div class="sin__desc">
-                                        <p><span>Availability:</span> In Stock</p>
+                                        <p><span>Availability:</span>
+                                 
+                                    </p>
+                                    </div>
+                                    <div class="sin__desc">
+                                        <p><span>Qty:</span>
+                                        <select>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                    </select>
+                                    
+                                    </p>
+                                       
                                     </div>
                                     <div class="sin__desc align--left">
                                         <p><span>Categories:</span></p>
