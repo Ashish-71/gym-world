@@ -64,7 +64,7 @@ $get_product=get_product($con,'','',$product_id);
                                     </div>
                                     <div class="sin__desc">
                                         <p><span>Qty:</span>
-                                        <select>
+                                        <select id="qty">
                                         <option>1</option>
                                         <option>2</option>
                                         <option>3</option>
@@ -74,7 +74,7 @@ $get_product=get_product($con,'','',$product_id);
                                         <option>7</option>
                                         <option>8</option>
                                         <option>9</option>
-                                        <option>10</option>
+                                        <option>10  n bn</option>
                                     </select>
                                     
                                     </p>
@@ -88,8 +88,7 @@ $get_product=get_product($con,'','',$product_id);
                                     </div>
                                
                                     </div>
-                                    <a class="fr__btn" href="#">Add to cart</a>
-                                </div>
+                                    <a class="fr__btn" href="javascript:void(0)" onclick="manage_cart('<?php echo $get_product['0']['id']?>','add')">Add to cart</a>                                </div>
                             </div>
                         </div>
                     </div>
