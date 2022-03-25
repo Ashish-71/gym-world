@@ -1,45 +1,5 @@
 <?php require('top.php')?>
-
-<!doctype html>
-<html class="no-js" lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Asbab - eCommerce HTML5 Templatee</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    
-
-    <!-- All css files are included here. -->
-    <!-- Bootstrap fremwork main css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Owl Carousel min css -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <!-- This core.css file contents all plugings css file. -->
-    <link rel="stylesheet" href="css/core.css">
-    <!-- Theme shortcodes/elements style -->
-    <link rel="stylesheet" href="css/shortcode/shortcodes.css">
-    <!-- Theme main style -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Responsive css -->
-    <link rel="stylesheet" href="css/responsive.css">
-    <!-- User style -->
-    <link rel="stylesheet" href="css/custom.css">
-
-
-    <!-- Modernizr JS -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-</head>
-
-<body>
-   
-
-        <div class="body__overlay"></div>
+<div class="body__overlay"></div>
         
         <!-- Start Slider Area -->
         <div class="slider__container slider--one bg__cat--3">
@@ -90,7 +50,7 @@
                             </div>
                         </div>
                     </div>
-                </div>  
+                </div>
                 <!-- End Single Slide -->
             </div>
         </div>
@@ -109,21 +69,21 @@
                 <div class="htc__product__container">
                     <div class="row">
                         <div class="product__list clearfix mt--30">
-                            <?php
-                                $get_product=get_product($con,4);
-                                foreach($get_product as $list){
-                            ?>
+							<?php
+							$get_product=get_product($con,4);
+							foreach($get_product as $list){
+							?>
                             <!-- Start Single Category -->
                             <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
                                 <div class="category">
                                     <div class="ht__cat__thumb">
                                         <a href="product.php?id=<?php echo $list['id']?>">
-                                            <img src="media/product/<?php echo $list['image']?>" alt="product images">
+                                            <img src="<?php echo PRODUCT_IMAGE_SITE_PATH.$list['image']?>" alt="product images">
                                         </a>
                                     </div>
                                     
                                     <div class="fr__product__inner">
-                                        <h4><a href="product-details.html"><?php echo $list['name'] ?></a></h4>
+                                        <h4><a href="product-details.html"><?php echo $list['name']?></a></h4>
                                         <ul class="fr__pro__prize">
                                             <li class="old__prize"><?php echo $list['mrp']?></li>
                                             <li><?php echo $list['price']?></li>
@@ -132,7 +92,13 @@
                                 </div>
                             </div>
                             <!-- End Single Category -->
-                           <?php }?>
+							<?php } ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Category Area -->
         <!-- Start Product Area -->
         <section class="ftr__product__area ptb--100">
             <div class="container">
@@ -182,6 +148,13 @@
                                     </a>
                                 </div>
                                 <div class="fr__hover__info">
+                                    <ul class="product__action">
+                                        <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
+
+                                        <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
+
+                                        <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
+                                    </ul>
                                 </div>
                                 <div class="fr__product__inner">
                                     <h4><a href="product-details.html">voluptatem accusantium</a></h4>
@@ -252,18 +225,4 @@
             </div>
         </section>
         <!-- End Product Area -->
-        <?php require('footer.php')?>
-</body>
-
-</html>
-
-
-
-
-
-
-
-
-
-
-
+<?php require('footer.php')?>        

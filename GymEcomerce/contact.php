@@ -1,8 +1,7 @@
 <?php 
-require('top.php');
+require('top.php');					
 ?>
-
-        <div class="ht__bradcaump__area" style="background: rgba(0, 0, 0, 0) url(images/bg/4.jpg) no-repeat scroll center center / cover ;">
+<div class="ht__bradcaump__area" style="background: rgba(0, 0, 0, 0) url(images/bg/4.jpg) no-repeat scroll center center / cover ;">
             <div class="ht__bradcaump__wrap">
                 <div class="container">
                     <div class="row">
@@ -72,15 +71,12 @@ require('top.php');
                             <form id="contact-form" action="#" method="post">
                                 <div class="single-contact-form">
                                     <div class="contact-box name">
-                                        <input type="text" name="name" id="name" placeholder="Your Name*">
-                                        <input type="email" name="email" id="email" placeholder="Email*">
-                                        <input type="email" name="mobile" id="mobile" placeholder="Mobile*">
+                                        <input type="text" id="name" name="name" placeholder="Your Name*">
+                                        <input type="email" id="email" name="email" placeholder="Email*">
+										<input type="email" id="mobile" name="mobile" placeholder="Mobile*">
                                     </div>
                                 </div>
-                                <div class="single-contact-form">
-                                  
-
-                                </div>
+                                
                                 <div class="single-contact-form">
                                     <div class="contact-box message">
                                         <textarea name="message" id="message" placeholder="Your Message"></textarea>
@@ -99,7 +95,7 @@ require('top.php');
             </div>
         </section>
         <!-- End Contact Area -->
-          <!-- Google Map js -->
+		<!-- Google Map js -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmGmeot5jcjdaJTvfCmQPfzeoG_pABeWo "></script>
     <script src="js/contact-map.js"></script>
     <script>
@@ -307,7 +303,4 @@ require('top.php');
             });
         }
     </script>
-
-      <?php
-      require('footer.php');
-      ?>
+<?php require('footer.php')?>        

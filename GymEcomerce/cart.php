@@ -50,7 +50,7 @@ require('top.php');
 											$qty=$val['qty'];
 											?>
 											<tr>
-												<td class="product-thumbnail"><a href="#"><img src="media/product/<?php echo $image?>"  /></a></td>
+												<td class="product-thumbnail"><a href="#"><img src="<?php echo PRODUCT_IMAGE_SITE_PATH.$image?>"  /></a></td>
 												<td class="product-name"><a href="#"><?php echo $pname?></a>
 													<ul  class="pro__prize">
 														<li class="old__prize"><?php echo $mrp?></li>
