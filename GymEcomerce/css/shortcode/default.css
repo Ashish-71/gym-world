@@ -54,11 +54,13 @@ h5,
 h6,
 p,
 ul,
+.ht_product_dt1{
+  color: rgb(9, 8, 8);
+}
 a {
   margin: 0;
   padding: 0;
 }
-
 /*----------------------
   02. Helper Classes
 ------------------------*/
@@ -70,7 +72,7 @@ a {
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
-}
+} 
 /*-----------------------
   03. Typography
 ------------------------*/
@@ -250,7 +252,7 @@ body {
     background: #c43b68;
 }
 .bg__white {
-  background: #fff;
+  background: #000;
 }
 .bg__gray {
     background: #f1f1f1;
@@ -262,7 +264,7 @@ body {
     background-color: #f4f4f4;
 }
 .bg__cat--3{
-    background-color: #f3f3f3;
+    background-color: #000000;
 }
 .bg__cat--4{
     background-color: #f5f5f5;
@@ -612,12 +614,18 @@ textarea:focus {
 .ptb--70 { padding: 70px 0 }
 .ptb--80 { padding: 80px 0 }
 .ptb--90 { padding: 90px 0 }
-.ptb--100 { padding: 100px 0 }
+.ptb--100 { 
+  background-color: #000;
+  padding: 100px 0
+
+ }
 .ptb--110 { padding: 110px 0 }
 .ptb--120 { padding: 120px 0 }
 .ptb--130 { padding: 130px 0 }
 .ptb--140 { padding: 140px 0 }
 .ptb--150 { padding: 150px 0 }
+
+
 
 /*---------------------------
   20. Page section margin 

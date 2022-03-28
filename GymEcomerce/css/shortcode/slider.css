@@ -154,6 +154,12 @@
     -webkit-animation: 1900ms ease-in-out 0s normal none 1 running bounceInRight;
             animation: 1900ms ease-in-out 0s normal none 1 running bounceInRight;
 } 
+.owl-item.active .single__slide.animation__style01 h1{
+  color: #fff;
+}
+.owl-item.active .single__slide.animation__style01 h2{
+  color:#fff
+}
 
 
 
