@@ -227,7 +227,7 @@ nav.off__canvars--menu ul li ul li a:hover {
     position: relative;
 }
 .htc__shopping__cart a i {
-    color: #000000;
+    color: white;
     font-size: 19px;
 }
 .htc__shopping__cart a span.htc__qua {
@@ -261,7 +261,7 @@ nav.off__canvars--menu ul li ul li a:hover {
 }
 
 .header__account a {
-    color: #000;
+    color: white;
     font-size: 19px;
     margin-right: 20px;
     padding-right: 20px;

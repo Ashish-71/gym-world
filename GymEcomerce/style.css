@@ -242,7 +242,7 @@
     text-align: center;
 }
 .fr__product__inner h4 a {
-    color: #444;
+    color: white;
     font-family: Old Standard TT;
     font-size: 17px;
     font-weight: 600;
@@ -258,14 +258,15 @@
     margin-top: 6px;
 }
 .fr__pro__prize li {
-    color: #313131;
+    color: white;
     font-family: Poppins;
     font-size: 16px;
     font-weight: 500;
     margin: 0 5px;
 }
 .fr__pro__prize li.old__prize {
-    color: #888888;
+    color: white;
+    text-decoration: line-through;
 }
 
 /*---------------------------------------
@@ -483,15 +484,16 @@
     text-transform: capitalize;
 }
 .pro__prize li {
-    color: #313131;
+    color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 600;
 }
 .pro__prize li.old__prize {
-    color: #888888;
+    color: white;
     font-weight: 400;
     padding-right: 12px;
+    text-decoration: line-through;
 }
 .htc__product__area {
     padding-top: 60px;
@@ -1846,7 +1848,7 @@ select.ht__select {
     border: 1px solid #c43b68;
 }
 .ht__product__dtl h2 {
-    color: #444;
+    color: white;
     font-family: Old Standard TT;
     font-size: 20px;
     font-weight: 600;
@@ -1860,7 +1862,7 @@ select.ht__select {
     margin-bottom: 11px;
 }
 .ht__product__dtl h6 span {
-    color: #868686;
+    color: white;
     font-family: 'Old Standard TT', serif;
     font-size: 15px;
     text-transform: uppercase;
@@ -1884,7 +1886,7 @@ select.ht__select {
     margin: 0;
 }
 .sin__desc p span {
-    color: #100d13;
+    color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     text-transform: capitalize;
@@ -1929,7 +1931,7 @@ select.ht__select {
 
 .pro__cat__list {
     display: flex;
-    margin-left: 10px;
+    margin-left: -30px;
 }
 .pro__share {
     display: flex;
@@ -1946,7 +1948,7 @@ select.ht__select {
     background: #100d13 none repeat scroll 0 0;
 }
 .pro__cat__list li a {
-    color: #666666;
+    color: white;
     font-size: 16px;
     transition: 0.3s;
 }
