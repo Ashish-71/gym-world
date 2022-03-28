@@ -78,12 +78,14 @@
                                 <div class="category">
                                     <div class="ht__cat__thumb">
                                         <a href="product.php?id=<?php echo $list['id']?>">
-                                            <img src="<?php echo PRODUCT_IMAGE_SITE_PATH.$list['image']?>" alt="product images">
+                                            <img src="media/product/<?php echo $list['image']?>" alt="product images">
                                         </a>
                                     </div>
                                     
                                     <div class="fr__product__inner">
-                                        <h4><a href="product-details.html"><?php echo $list['name']?></a></h4>
+                                    <a href="product.php?id=<?php echo $list['id']?>">
+                                            <h4 class="fr__product__inner a"> <?php echo $list['name']?></h4>
+                                        </a>
                                         <ul class="fr__pro__prize">
                                         <li><?php echo $list['price']?></li>
                                             <li class="old__prize"><?php echo $list['mrp']?></li>
