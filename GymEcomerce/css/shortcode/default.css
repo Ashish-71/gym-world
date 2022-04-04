@@ -55,7 +55,7 @@ h6,
 p,
 ul,
 .ht_product_dt1{
-  color: rgb(9, 8, 8);
+  color: white;
 }
 a {
   margin: 0;
@@ -219,6 +219,8 @@ body {
 a,
 .btn {
     transition: all 0.3s ease-out 0s;
+    color: white;
+    font-size: larger;
 }
 input,
 
