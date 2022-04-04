@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 25, 2022 at 01:01 PM
+-- Generation Time: Apr 04, 2022 at 02:15 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -52,6 +52,17 @@ CREATE TABLE `categories` (
   `status` tinyint(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `categories`
+--
+
+INSERT INTO `categories` (`id`, `categories`, `status`) VALUES
+(1, 'cardio', 1),
+(2, 'equetment', 1),
+(3, 'merchant', 1),
+(4, 'powder', 1),
+(5, 'benches', 0);
+
 -- --------------------------------------------------------
 
 --
@@ -89,6 +100,13 @@ CREATE TABLE `order` (
   `added_on` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `order`
+--
+
+INSERT INTO `order` (`id`, `user_id`, `address`, `city`, `pincode`, `payment_type`, `total_price`, `payment_status`, `order_status`, `txnid`, `mihpayid`, `payu_status`, `added_on`) VALUES
+(1, 1, '35/2 padmavati society', 'ahmedabad/gujarat', 382480, 'payu', 6000, 'pending', 1, '3b910856b9f8e84b15f1', '', '', '2022-03-29 08:37:42');
+
 -- --------------------------------------------------------
 
 --
@@ -102,6 +120,13 @@ CREATE TABLE `order_detail` (
   `qty` int(11) NOT NULL,
   `price` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `order_detail`
+--
+
+INSERT INTO `order_detail` (`id`, `order_id`, `product_id`, `qty`, `price`) VALUES
+(1, 1, 9, 5, 1200);
 
 -- --------------------------------------------------------
 
@@ -130,11 +155,19 @@ CREATE TABLE `product` (
   `image` varchar(255) NOT NULL,
   `short_desc` varchar(2000) NOT NULL,
   `description` text NOT NULL,
+  `best_seller` int(11) NOT NULL,
   `meta_title` varchar(2000) NOT NULL,
   `meta_desc` varchar(2000) NOT NULL,
   `meta_keyword` varchar(2000) NOT NULL,
   `status` tinyint(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `product`
+--
+
+INSERT INTO `product` (`id`, `categories_id`, `name`, `mrp`, `price`, `qty`, `image`, `short_desc`, `description`, `best_seller`, `meta_title`, `meta_desc`, `meta_keyword`, `status`) VALUES
+(9, 3, 'Nike gym shorts', 1400, 1200, 300, '557608050_pd2.jpg', 'Nike sports shorts for Gym and running as well as all sports....', 'Gym shorts <br>\r\n•	Fabric: cotton       <br>\r\n•	Ideal for : Men\'s & Women’s both <br>                \r\n•	Pocket on both side     <br>\r\n•	Type: Sports,Gym,Aethlete  <br>     \r\n•	Leg style : tapered', 1, 'Nike gym shorts', '', '', 1);
 
 -- --------------------------------------------------------
 
@@ -150,6 +183,33 @@ CREATE TABLE `users` (
   `mobile` varchar(15) NOT NULL,
   `added_on` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `password`, `email`, `mobile`, `added_on`) VALUES
+(1, 'devarsh', 'devarsh007', 'devarsh@gmail.com', '89808235248', '2022-03-28 07:28:44');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `wishlist`
+--
+
+CREATE TABLE `wishlist` (
+  `id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `product_id` int(11) NOT NULL,
+  `added_on` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `wishlist`
+--
+
+INSERT INTO `wishlist` (`id`, `user_id`, `product_id`, `added_on`) VALUES
+(4, 1, 9, '2022-03-31 07:27:26');
 
 --
 -- Indexes for dumped tables
@@ -204,6 +264,12 @@ ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `wishlist`
+--
+ALTER TABLE `wishlist`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -217,7 +283,7 @@ ALTER TABLE `admin_users`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `contact_us`
@@ -229,13 +295,13 @@ ALTER TABLE `contact_us`
 -- AUTO_INCREMENT for table `order`
 --
 ALTER TABLE `order`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `order_detail`
 --
 ALTER TABLE `order_detail`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `order_status`
@@ -247,13 +313,19 @@ ALTER TABLE `order_status`
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `wishlist`
+--
+ALTER TABLE `wishlist`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
