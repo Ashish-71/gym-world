@@ -85,7 +85,7 @@ if(isset($_SESSION['USER_LOGIN']) && $_SESSION['USER_LOGIN']=='yes'){
 									</div>
 									<div class="single-contact-form">
 										<div class="contact-box name">
-											<input type="text" name="email" id="email" placeholder="Your Email*" style="width:45%">
+											<input type="text" name="email" id="email" placeholder="Your Email*" style="width:66%">
 											
 											
 											<button type="button" class="fv-btn email_sent_otp height_60px" onclick="email_sent_otp()">Send OTP</button>
@@ -101,16 +101,9 @@ if(isset($_SESSION['USER_LOGIN']) && $_SESSION['USER_LOGIN']=='yes'){
 									</div>
 									<div class="single-contact-form">
 										<div class="contact-box name">
-											<input type="text" name="mobile" id="mobile" placeholder="Your Mobile*" style="width:45%">
+											<input type="text" name="mobile" id="mobile" placeholder="Your Mobile*" style="width:100%">
 											
-											<button type="button" class="fv-btn mobile_sent_otp height_60px" onclick="mobile_sent_otp()">Send OTP</button>
-											
-											<input type="text" id="mobile_otp" placeholder="OTP" style="width:45%" class="mobile_verify_otp">
-											
-											
-											<button type="button" class="fv-btn mobile_verify_otp height_60px" onclick="mobile_verify_otp()">Verify OTP</button>
-											
-											<span id="mobile_otp_result"></span>
+										
 											
 											
 										</div>
