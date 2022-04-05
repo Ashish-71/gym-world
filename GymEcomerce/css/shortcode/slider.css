@@ -35,6 +35,7 @@
   align-items: center;
   display: flex;
   height: 800px;
+  background-color: #15d82f;
 }
 .slider--one .slide {
     align-items: center;
