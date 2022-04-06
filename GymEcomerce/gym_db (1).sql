@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 04, 2022 at 02:15 PM
+-- Generation Time: Apr 06, 2022 at 11:45 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -167,7 +167,10 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`id`, `categories_id`, `name`, `mrp`, `price`, `qty`, `image`, `short_desc`, `description`, `best_seller`, `meta_title`, `meta_desc`, `meta_keyword`, `status`) VALUES
-(9, 3, 'Nike gym shorts', 1400, 1200, 300, '557608050_pd2.jpg', 'Nike sports shorts for Gym and running as well as all sports....', 'Gym shorts <br>\r\n•	Fabric: cotton       <br>\r\n•	Ideal for : Men\'s & Women’s both <br>                \r\n•	Pocket on both side     <br>\r\n•	Type: Sports,Gym,Aethlete  <br>     \r\n•	Leg style : tapered', 1, 'Nike gym shorts', '', '', 1);
+(9, 3, 'Nike gym shorts', 1400, 1200, 300, '557608050_pd2.jpg', 'Nike sports shorts for Gym and running as well as all sports....', 'Gym shorts <br>\r\n•	Fabric: cotton<br>\r\n•	Ideal for : Men\'s & Women’s both<br>                \r\n•	Pocket on both side<br>\r\n•	Type: Sports,Gym,Aethlete<br>     \r\n•	Leg style : tapered', 1, 'Nike gym shorts', '', '', 1),
+(11, 3, 'Gym shorts', 1450, 950, 66, '465358975_d.jpeg', 'Nike sports shorts for Gym and running as well as all sports....', 'Gym shorts <br>\r\n•	Fabric: cotton<br>               \r\n•	Pocket on both side<br>\r\n•	Type: Sports, Gym, Aethlete <br>     \r\n•	Fabric: cotton<br>\r\n•	Ideal for: Men\'s <br>                \r\n•	Pocket on both side<br>\r\n•	Type: Sports, Gym, Aethlete <br>     \r\n•	No shrinkage after numerous washes <br>     \r\n•       No color fade after numerous washes <br>     \r\n•       No fuzz balls after numerous washes <br>', 1, 'Gym shorts', 'Gym shorts', 'Gym shorts', 1),
+(12, 3, 'Nike’s Gym T-shirt', 2100, 1800, 102, '892063194_WhatsApp Image 2022-04-06 at 12.19.00 PM.jpeg', 'Nike’s Gym T-shirt...comfortable with great quality', '<span class=\"desc\">Nike’s Gym T-shirt </span><br>\r\n•             <span class=\"desc\">Company :</span> Nike<br>\r\n•	<span class=\"desc\">Material :</span> cotton<br>               \r\n•	<span class=\"desc\">Type :</span> Sports, Gym, Aethlete <br>     \r\n•	<span class=\"desc\">Ideal for :</span> Men\'s & Women’s both<br>                \r\n•       Male model shown is 6\'0\" / 183 cm tall and wearing size Large<br>\r\n•       Female model shown is 5\'8\" / 173 cm tall and wearing size Small', 1, 'Nike’s Gym T-shirts', 'Nike’s Gym T-shirts', 'Nike’s Gym T-shirts', 1),
+(13, 3, 'Puma Gym Track', 2800, 2000, 300, '250199201_WhatsApp Image 2022-04-06 at 2.20.50 PM.jpeg', 'Puma Gym Track with flexible material  and good quality', '•             <span class=\"desc\">Puma Gym Tracks </span> \r\n•             <span class=\"desc\">Company :</span> Puma<br>\r\n•	<span class=\"desc\">Material :</span> cotton<br>               \r\n•	<span class=\"desc\">Type :</span> Sports, Gym, Athlete <br>     \r\n•	<span class=\"desc\">Ideal for :< /span> Men\'s & Women’s both<br>                \r\n•            Stretchy and lightweight tapered gym joggers \r\n•           2 front zippered pockets keep your phone, keys and wallet safe. \r\n•          Slim workout pants perfect fit jogging, running, exercise outdoor activities, etc.', 1, 'Puma Gym Track', 'Puma Gym Track', 'Puma Gym Track', 1);
 
 -- --------------------------------------------------------
 
@@ -189,7 +192,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `password`, `email`, `mobile`, `added_on`) VALUES
-(1, 'devarsh', 'devarsh007', 'devarsh@gmail.com', '89808235248', '2022-03-28 07:28:44');
+(1, 'devarsh', 'devarsh007', 'devarsh@gmail.com', '89808235248', '2022-03-28 07:28:44'),
+(3, 'Devarsh', 'devarsh007', 'devarshjoshi2001@gmail.com', '8980823248', '2022-04-06 08:11:46');
 
 -- --------------------------------------------------------
 
@@ -313,19 +317,19 @@ ALTER TABLE `order_status`
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `wishlist`
 --
 ALTER TABLE `wishlist`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

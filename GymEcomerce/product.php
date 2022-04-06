@@ -90,9 +90,9 @@ if(isset($_GET['id'])){
 										</p>
                                     </div>
                                     <div class="sin__desc align--left">
-                                        <p><span>Categories:</span></p>
+                                        <p><span>Categories:<a href="#">&nbsp;<?php echo $get_product['0']['categories']?></span></p>
                                         <ul class="pro__cat__list">
-                                            <li><a href="#"><?php echo $get_product['0']['categories']?></a></li>
+                                            <li></a></li>
                                         </ul>
                                     </div>
                                     

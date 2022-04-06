@@ -15,3 +15,7 @@
     font-family: "Poppins";
     cursor: pointer;
 }
+.desc{
+   font-weight: bold;
+   font-size: larger;
+}
