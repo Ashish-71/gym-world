@@ -96,13 +96,15 @@ if($mypage=='login.php'){
                         <div class="menumenu__container clearfix">
                             <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5"> 
                                 <div class="logo">
-                                     <a href="index.php"><img src="images/logo/5.png" alt="logo images"></a>
+                                <a href="index.php"><img src="images/logo/5.png" alt="logo images"></a>
+                                        <h1>Fitness Center</h1>
+                                    
                                 </div>
                             </div>
                             <div class="col-md-7 col-lg-6 col-sm-5 col-xs-3">
                                 <nav class="main__menu__nav hidden-xs hidden-sm">
                                     <ul class="main__menu">
-                                        <li class="drop"><a href="index.php">Home</a></li>
+                                        <!-- <li class="drop"><a href="index.php">Home</a></li> -->
                                         <?php
 										foreach($cat_arr as $list){
 											?>
@@ -110,7 +112,7 @@ if($mypage=='login.php'){
 											<?php
 										}
 										?>
-                                        <li><a href="contact.php">contact</a></li>
+                        
                                     </ul>
                                 </nav>
 

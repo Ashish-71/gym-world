@@ -8,12 +8,12 @@
                             <div class="footer">
                                 <h2 class="title__line--2">ABOUT US</h2>
                                 <div class="ft__details">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
+                                    <p>Gym and Fitness was founded in 2002 as a family owned and operated business specialising in supplying high-quality gym equipment at great prices.</p>
                                     <div class="ft__social__link">
                                         <ul class="social__link">
-                                            <li><a href="#"><i class="icon-social-twitter icons"></i></a></li>
+                                            <li><a href="https://twitter.com/FitnessSchilde"><i class="icon-social-twitter icons"></i></a></li>
 
-                                            <li><a href="#"><i class="icon-social-instagram icons"></i></a></li>
+                                            <li><a href="https://www.instagram.com/ashish_soni_7101/"><i class="icon-social-instagram icons"></i></a></li>
 
                                             <li><a href="#"><i class="icon-social-facebook icons"></i></a></li>
 
@@ -32,31 +32,13 @@
                                 <h2 class="title__line--2">information</h2>
                                 <div class="ft__inner">
                                     <ul class="ft__list">
-                                        <li><a href="#">About us</a></li>
-                                        <li><a href="#">Delivery Information</a></li>
-                                        <li><a href="#">Privacy & Policy</a></li>
-                                        <li><a href="#">Terms  & Condition</a></li>
-                                        <li><a href="#">Manufactures</a></li>
+                                        <li><a href="aboutus.php">	About us</a></li>
+                                        <li><a href="contactus.php"> Contact us</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <!-- End Single Footer Widget -->
-                        <!-- Start Single Footer Widget -->
-                        <div class="col-md-2 col-sm-6 col-xs-12 xmt-40 smt-40">
-                            <div class="footer">
-                                <h2 class="title__line--2">my account</h2>
-                                <div class="ft__inner">
-                                    <ul class="ft__list">
-                                        <li><a href="#">My Account</a></li>
-                                        <li><a href="cart.html">My Cart</a></li>
-                                        <li><a href="#">Login</a></li>
-                                        <li><a href="wishlist.html">Wishlist</a></li>
-                                        <li><a href="checkout.html">Checkout</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+
                         <!-- End Single Footer Widget -->
                         <!-- Start Single Footer Widget -->
                         <div class="col-md-2 col-sm-6 col-xs-12 xmt-40 smt-40">
@@ -64,11 +46,11 @@
                                 <h2 class="title__line--2">Our service</h2>
                                 <div class="ft__inner">
                                     <ul class="ft__list">
-                                        <li><a href="#">My Account</a></li>
-                                        <li><a href="cart.html">My Cart</a></li>
-                                        <li><a href="#">Login</a></li>
-                                        <li><a href="wishlist.html">Wishlist</a></li>
-                                        <li><a href="checkout.html">Checkout</a></li>
+                                        <li><a href="login.php"> My Account</a></li>
+                                        <li><a href="cart.php"> My Cart</a></li>
+                                        <li><a href="login.php"> Login</a></li>
+                                        <li><a href="wishlist.php"> Wishlist</a></li>
+                                        <li><a href="checkout.php"> Checkout</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -100,7 +82,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="copyright__inner">
-                                <p>Copyright© <a href="https://freethemescloud.com/">Free themes Cloud</a> 2018. All right reserved.</p>
+                                <p>Copyright© Ashish Soni & Shrey Patel</p>
                                 <a href="#"><img src="images/others/shape/paypol.png" alt="payment images"></a>
                             </div>
                         </div>

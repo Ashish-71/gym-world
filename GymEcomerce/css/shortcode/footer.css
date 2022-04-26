@@ -148,11 +148,13 @@
     font-weight: 500;
     margin-bottom: 25px;
     text-transform: uppercase;
+    margin: -11px 41px 11px -20px;
 }
 .footer .ft__details p {
     color: #a4a4a4;
     font-size: 16px;
     line-height: 22px;
+    margin: 0 0 0 -20px;
 }
 .footer__btn a {
       color: #ffffff;
@@ -170,7 +172,10 @@
 .ft__list li a {
     color: #a4a4a4;
     font-size: 16px;
+    margin: 10px -38px 10px;
     transition: all 0.4s ease 0s;
+    
+    
 }
 .ft__list li + li {
     padding-top: 9px;
@@ -178,6 +183,7 @@
 .ft__list li a:hover {
     color: #c43b68;
     padding-left: 3px;
+    border-bottom: #c43b68 solid 3px;;
 }
 .ft__social__link span {
     color: #ffffff;
@@ -193,6 +199,7 @@
 }
 .social__link {
     display: flex;
+    padding-left: 1px;
 }
 .social__link li a i {
     background: transparent none repeat scroll 0 0;
@@ -310,6 +317,7 @@
 .copyright__inner p {
     color: #ffffff;
     font-size: 14px;
+    padding: 21px 177px 11px;
     text-transform: capitalize;
 }
 .copyright__inner p a {

@@ -10,7 +10,7 @@ if(isset($_SESSION['USER_LOGIN']) && $_SESSION['USER_LOGIN']=='yes'){
 }
 ?>
 <!-- Start Bradcaump area -->
-        <div class="ht__bradcaump__area" style="background: rgba(0, 0, 0, 0) url(images/bg/4.jpg) no-repeat scroll center center / cover ;">
+        <div class="ht__bradcaump__area" style="background: no-repeat scroll center center / cover ;">
             <div class="ht__bradcaump__wrap">
                 <div class="container">
                     <div class="row">
@@ -54,9 +54,13 @@ if(isset($_SESSION['USER_LOGIN']) && $_SESSION['USER_LOGIN']=='yes'){
 										</div>
 										<span class="field_error" id="login_password_error"></span>
 									</div>
+							
 									
 									<div class="contact-btn">
 										<button type="button" class="fv-btn" onclick="user_login()">Login</button>
+									</div>
+									<div class="contact-btn">
+										<button type="button"  class="frg-btn"onclick="frg-btn()">Forget password ?</button>
 									</div>
 								</form>
 								<div class="form-output login_msg">
@@ -85,7 +89,7 @@ if(isset($_SESSION['USER_LOGIN']) && $_SESSION['USER_LOGIN']=='yes'){
 									</div>
 									<div class="single-contact-form">
 										<div class="contact-box name">
-											<input type="text" name="email" id="email" placeholder="Your Email*" style="width:66%">
+											<input type="text" name="email" id="email" placeholder="Your Email*" style="width:80%">
 											
 											
 											<button type="button" class="fv-btn email_sent_otp height_60px" onclick="email_sent_otp()">Send OTP</button>

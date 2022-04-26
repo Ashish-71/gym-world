@@ -48,14 +48,14 @@
 *,
 h1,
 h2,
-h3,
+h3,   
 h4,
 h5,
 h6,
 p,
 ul,
 .ht_product_dt1{
-  color: white;
+  color: #fff;
 }
 a {
   margin: 0;
@@ -85,8 +85,8 @@ html {
     }
 }
 body {
-    font-family: 'Old Standard TT', serif;
-    color: #666666;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -99,6 +99,7 @@ p{
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    margin-left: -221px;
 
 }
 h1,
@@ -122,12 +123,14 @@ h6,
     margin-bottom: 0;
 }
 h1, .h1 {
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 700;
 }
 h2, .h2 {
     font-size: 30px;
     font-weight: 400;
+    color: white;
+    margin-left: -221px;
 }
 h3, .h3 {
     font-size: 14px;
@@ -233,12 +236,22 @@ textarea {
   05. Images
 ----------------------*/
 img, .img {
+  margin-left: -202px;
   max-width: 100%;
   transition: all 0.3s ease-out 0s;
 }
 p + img,
 img:last-child {
   margin-bottom: 0;
+  margin-left: 0px;
+}
+.add_to_cart{
+  box-shadow: 0 0 20px rgb(248 251 247 / 68%);
+  border: #fff double 4px
+
+}
+.produ{
+  border: white solid 3px;
 }
 body {
   background: #fff;
@@ -483,6 +496,7 @@ input[type=password]{
 }
 select {
     width: 100%;
+    background-color: #000;
     
 }
 input:focus {
@@ -577,7 +591,7 @@ textarea:focus {
 .pt--100 { padding-top: 100px }
 .pt--110 { padding-top: 110px }
 .pt--120 { padding-top: 120px }
-.pt--130 { padding-top: 130px }-
+.pt--130 { padding-top: 130px }
 .pt--140 { padding-top: 140px }
 .pt--150 { padding-top: 150px }
 
@@ -617,10 +631,10 @@ textarea:focus {
 .ptb--80 { padding: 80px 0 }
 .ptb--90 { padding: 90px 0 }
 .ptb--100 { 
-  background-color: #000;
-  padding: 100px 0
-
+ background-color: #000;
+  padding: 100px 0;
  }
+ 
 .ptb--110 { padding: 110px 0 }
 .ptb--120 { padding: 120px 0 }
 .ptb--130 { padding: 130px 0 }

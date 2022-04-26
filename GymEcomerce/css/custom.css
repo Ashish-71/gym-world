@@ -1,6 +1,6 @@
 .field_error{color:red;}
 .accordion .accordion__hide {
-    background: #f4f4f4;
+    background: #000;
     height: 65px;
     line-height: 65px;
     display: flex;
@@ -18,4 +18,15 @@
 .desc{
    font-weight: bold;
    font-size: larger;
+}
+.bg__white {
+    background-color: #000;
+}
+.col-md-12  input{
+    background-color: #000;
+}
+
+.col-md-6 input{
+    background-color: #000;
+    color: aliceblue;
 }
