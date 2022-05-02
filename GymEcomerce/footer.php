@@ -33,7 +33,7 @@
                                 <div class="ft__inner">
                                     <ul class="ft__list">
                                         <li><a href="aboutus.php">	About us</a></li>
-                                        <li><a href="contactus.php"> Contact us</a></li>
+                                        <li><a href="contact.php"> Contact us</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -65,16 +65,34 @@
                                         <input type="text" placeholder="Your Mail*">
                                         <div class="send__btn">
                                             <a class="fr__btn" href="#">Send Mail</a>
+                                            
                                         </div>
                                     </div>
                                     
                                 </div>
                             </div>
                         </div>
+                        <h2 class="title__line--2">Give Rating </h2>
+                        <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                     </div>
+                     <div class="rate_btn_a ">
+                         <a class="rate_btn" href="#">Submit</a>
+
                         <!-- End Single Footer Widget -->
                     </div>
                 </div>
             </div>
+            
             <!-- End Footer Widget -->
             <!-- Start Copyright Area -->
             <div class="htc__copyright bg__cat--5">

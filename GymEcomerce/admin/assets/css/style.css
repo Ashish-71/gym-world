@@ -429,7 +429,7 @@ body {
     font-family: open sans, sans-serif;
     font-size: 16px;
     width: 100%;
-    background-color: #000;
+    background-color: transparent;
 }
 p:focus {
     border: none;
@@ -559,7 +559,8 @@ canvas {
 
 .order-table {
     position: relative;
-    background-color: #000;
+    background: transparent;
+    
 }
 
 .order-table:after,
@@ -574,12 +575,12 @@ canvas {
 
 .order-table:after {
     right: -1px;
-    background-color: #000;
+    background: transparent;
 }
 
 .order-table:before {
     left: -1px;
-    background-color: #000;
+    background: transparent;
 }
 
 .order-table tr th {
@@ -589,7 +590,7 @@ canvas {
 .order-table tr td:last-child,
 .order-table tr th:last-child {
     text-align: right;
-    background-color: #000;
+    background: transparent;
 }
 
 .order-table tr:last-child td {
@@ -730,7 +731,7 @@ canvas {
 }
 
 aside.left-panel {
-    background-image: url(../../images/test.jpg);
+    background-image:  linear-gradient( rgba(0, 0, 0, 0.441), rgba(0, 0, 0, 0.7) ), url(../../../images/adminbg.jpg);
     height: 100vh;
     padding: 0;
     vertical-align: top;
@@ -767,7 +768,7 @@ aside.left-panel:hover {
 }
 
 .navbar .main-menu {
-   background-image: url(../../images/test.jpg);
+    background-image:  linear-gradient( rgba(0, 0, 0, 0.441), rgba(0, 0, 0, 0.909) ), url(../../../images/adminbg.jpg);
     float: left;
     padding: 0;
     padding-bottom: 50px
@@ -827,7 +828,7 @@ aside.left-panel:hover {
 
 .navbar .navbar-nav li>a:hover,
 .navbar .navbar-nav li>a:hover .menu-icon {
-    color: #FF0000
+    color: #54F6E8;
 }
 
 .navbar .navbar-nav li>a .menu-icon {
@@ -852,13 +853,17 @@ aside.left-panel:hover {
 }
 
 .navbar .navbar-nav li.menu-item-has-children {
-    position: relative
+    position: relative;
 }
 
 .navbar .navbar-nav li.menu-item-has-children a {
-    line-height: 30px
+    line-height: 30px;
+   
 }
+.navbar .navbar-nav li.menu-item-has-children a:hover {
+    border-bottom: #54F6E8 solid 2px;
 
+}
 .navbar .navbar-nav li.menu-item-has-children a:before {
     content: "";
     position: absolute;
@@ -872,11 +877,13 @@ aside.left-panel:hover {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     -webkit-transition: all .25s ease;
-    transition: all .25s ease
+    transition: all .25s ease;
+   
 }
 
 .navbar .navbar-nav li.menu-item-has-children a:hover:before {
-    border-color: #03a9f3 #03a9f3 transparent transparent
+    border-color: #03a9f3 #03a9f3 transparent transparent;
+    
 }
 
 .navbar .navbar-nav li.menu-item-has-children .sub-menu {
@@ -1624,10 +1631,13 @@ header .form-inline .search-form.close {
     background-color: #000;
 }
 .content {
-    background-color: #131c21;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../../../images/bg/admin.jpg);
     float: left;
     padding: 1.875em;
-    width: 100%
+    width: 100%;
+    background-size: cover;
+
+
 
 }
 
@@ -1829,8 +1839,8 @@ header .form-inline .search-form.close {
 }
 
 .card .card-body {
-    background-color: #000;
-    float: left;
+    
+    background: transparent;
     padding: 1.25em;
     position: relative;
     width: 100%
@@ -1988,7 +1998,7 @@ header .form-inline .search-form.close {
 .table-stats table td {
     border: none;
     border-bottom: 1px solid #e8e9ef;
-    background-color: #000;
+    background: transparent;
     color: #fff;
     font-size: 12px;
     font-weight: bolder;
@@ -2011,7 +2021,7 @@ header .form-inline .search-form.close {
 
 .table-stats table td {
 
-    background-color: #000;
+    background: transparent;
     color: #fff;
     font-size: 14px;
     font-weight: bold;
@@ -2827,7 +2837,7 @@ footer.site-footer .footer-inner {
     font-family: open sans;
     font-size: 14px;
     line-height: 1.5;
-    padding: 2.45em 1.125em
+    padding: 2.45em 1.125em;
 }
 
 footer.site-footer .footer-inner a {

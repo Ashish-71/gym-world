@@ -58,9 +58,14 @@ html {
 .ashish{
   border-radius: 7px;
   max-width: 100%;
-  border: #F8E70D solid 10px;
+  border: #F8E70D solid 4px;
   box-shadow: 0 0 15px rgb(248 251 247 / 48%);
-  margin: 0 0px 45px -204px;
+  margin: 0 0px 45px -204px;  
+}
+.ashish:hover{
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+      transform: translate(0px, -8px);
+      transition: .10s;
 }
 
 .about-section {
@@ -86,20 +91,22 @@ html {
 }
 
 .button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 15%;
+  background-color: #cf1b57;
+    border: #cf1b57 solid 2px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: all 0.4s ease 0s;
 }
 
 .button:hover {
-  background-color: white;
-  color: black;
+  background-color: #ed1c24;
+    color: #fff;
+    border-radius: 10px;
+    border: 2px solid rgb(232, 182, 182);
 }
 
 @media screen and (max-width: 650px) {
@@ -118,7 +125,7 @@ html {
 <div class="row">
   <div class="column">
     <div class="card">
-      <img class="ashish" src="media/product/gg.jpg"  style="width:100%">
+      <img class="ashish" src="images/me.jpg"  style="width:100%">
       <div class="container">
         <h2> Ashish Soni</h2>
         <p class="title">Owner</p>
@@ -131,12 +138,13 @@ html {
 
   <div class="column">
     <div class="card">
-      <img class="ashish" src="media/product/12.jpg" alt="Mike" style="width:100%">
+      <img class="ashish" src="images/shrey.jpeg" style="width:100%">
       <div class="container">
         <h2>Shrey Patel</h2>
         <p class="title">Manager</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>mike@example.com</p>
+        <p>If you're looking for an opportunity to grow at a company that'<br>
+empowered, inclusive, and values great work</p>
+        <p>shrey2538@gmai.com</p>
         <p><button class="button">Contact</button></p>
       </div>
     </div>
@@ -158,4 +166,4 @@ html {
         
     
     
-    <?php require('footer.php')?>        R
+    <?php require('footer.php')?>        

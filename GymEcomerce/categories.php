@@ -56,7 +56,7 @@ if($cat_id>0){
                                 <nav class="bradcaump-inner">
                                   <a class="breadcrumb-item" href="index.php">Home</a>
                                   <span class="brd-separetor"><i class="zmdi zmdi-chevron-right"></i></span>
-                                  <span class="breadcrumb-item active">Products</span>
+                                  <span class="breadcrumb-item active">categories</span>
                                 </nav>
                             </div>
                         </div>

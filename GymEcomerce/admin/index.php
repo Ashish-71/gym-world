@@ -7,7 +7,8 @@ require('top.inc.php');
 		  <div class="col-xl-12">
 			 <div class="card">
 				<div class="card-body">
-				   <h4 class="box-title">Welcome back Admin </h4>
+				   <h4 class="box-title"><marquee behavior="alternate">Welcome back Admin..</marquee></h4>					
+
 				</div>
 			</div>
 		  </div>

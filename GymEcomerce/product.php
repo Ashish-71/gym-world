@@ -102,11 +102,13 @@ if(isset($_GET['id'])){
                         
                     </div>
                     <a class="fr__btn" href="javascript:void(0)" onclick="manage_cart('<?php echo $get_product['0']['id']?>','add')"><span>Add to cart</span></a>
+                   
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 <!-- End Product Details Top -->
 <!-- End Product Details Area 
           <!-- Start Product Description -->

@@ -67,6 +67,7 @@ require('top.php');
                                 <h2 class="title__line--6">SEND A MAIL</h2>
                             </div>
                         </div>
+                        <?php if(isset($_SESSION['USER_LOGIN'])){?>
                         <div class="col-xs-12">
                             <form id="contact-form" action="#" method="post">
                                 <div class="single-contact-form">
@@ -87,6 +88,8 @@ require('top.php');
                                 </div>
                             </form>
                             <div class="form-output">
+                            <?php }else
+                            echo "Please login"?>
                                 <p class="form-messege"></p>
                             </div>
                         </div>

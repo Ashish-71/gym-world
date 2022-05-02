@@ -92,6 +92,13 @@ button
     font-size: 18px;
     border-radius: 20px;
 }
+button:hover{
+    background-color: #28e451;
+    color: #fff;
+    border-radius: 10px;
+    border: 2px solid rgb(232, 182, 182);
+    transition: all 0.4s ease 0s;
+}
 .error{
     color: red;
 }

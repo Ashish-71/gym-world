@@ -14,14 +14,14 @@
                                         <h1>NICE TREDMILL</h1>
                                         <div class="cr__btn">
                                             
-                                            <a href="cart.html">Shop Now</a>
+                                            <a href="product.php?id=14">Shop Now</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-5 col-xs-12 col-md-5">
                                 <div class="slide__thumb">
-                                    <img src="images/homepage.png" alt="slider images">
+                                    <img  src="images/homepage.png" alt="slider images">
                                 </div>
                             </div>
                         </div>

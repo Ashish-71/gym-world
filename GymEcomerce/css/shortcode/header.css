@@ -27,6 +27,28 @@
   margin-top: 24px;
   position: relative;
   list-style: none;
+  width: 0%;
+}
+.main__menu > li > a::hover {
+  content: 'bodybuilding';
+  height: 3px;
+  width: 0%;
+  background: #ef6f6c;
+  border-radius: 4px;
+  color: white;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.main_menu > li > a .active::after {
+  width: 100%;
+}
+
+.main_menu > li > a:hover:after {
+  width: 100%;
+  color: white;
 }
 
 
@@ -44,7 +66,8 @@
     width: 0;
     transition: 0.5s;
     left: 0;
-    border-bottom: #ddd solid 2px;
+    border-top: #ddd solid 2px;
+    
     bottom: -2px;
     
   }
@@ -59,7 +82,18 @@
 }
 .main__menu > li:hover > a{
   color: #da3389;
-  border-bottom: #ccc solid 2px;
+  border: #ccc solid 2px;
+  border-radius: 4px;
+  background-color: #da3389;    
+  color: white;
+  /* height: 3px; */
+  width: 90%;
+  /* position: absolute; */
+  /* left: 0; */
+  /* bottom: -10px; */
+  transition: 0.5s;
+  /* border-top: #ccc solid 2px; */
+  
 
 } 
 .logo a{
@@ -535,6 +569,7 @@ nav.off__canvars--menu ul li ul li a:hover {
     display: flex;
     height: 80px;
     justify-content: flex-start;
+    
 }
 
 .htc__contact a i {

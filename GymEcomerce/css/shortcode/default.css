@@ -131,6 +131,7 @@ h2, .h2 {
     font-weight: 400;
     color: white;
     margin-left: -221px;
+    
 }
 h3, .h3 {
     font-size: 14px;
@@ -705,7 +706,8 @@ textarea:focus {
  Others
 -------------------------*/
 p.form-messege{
-  margin-top:15px;font-size:14px
+  margin-top:15px;font-size:14px;
+  margin-left: 0;
 }
 p.success {
   color: green;

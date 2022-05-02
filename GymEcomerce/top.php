@@ -27,9 +27,9 @@ $script_name=$_SERVER['SCRIPT_NAME'];
 $script_name_arr=explode('/',$script_name);
 $mypage=$script_name_arr[count($script_name_arr)-1];
 
-$meta_title="Gym Center";
-$meta_desc="Gym Center";
-$meta_keyword="Gym Center";
+$meta_title="Fitness Center";
+$meta_desc="Fitness Center";
+$meta_keyword="Fitness Centerr";
 if($mypage=='product.php'){
 	$product_id=get_safe_value($con,$_GET['id']);
 	$product_meta=mysqli_fetch_assoc(mysqli_query($con,"select * from product where id='$product_id'"));
@@ -97,25 +97,24 @@ if($mypage=='login.php'){
                             <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5"> 
                                 <div class="logo">
                                 <a href="index.php"><img src="images/logo/5.png" alt="logo images"></a>
-                                        <h1>Fitness Center</h1>
+                                        <h1> <a href="index.php">Fitness Center </a> </h1>    
                                     
                                 </div>
                             </div>
                             <div class="col-md-7 col-lg-6 col-sm-5 col-xs-3">
                                 <nav class="main__menu__nav hidden-xs hidden-sm">
                                     <ul class="main__menu">
-                                        <!-- <li class="drop"><a href="index.php">Home</a></li> -->
+                                        
                                         <?php
 										foreach($cat_arr as $list){
 											?>
 											<li><a href="categories.php?id=<?php echo $list['id']?>"><?php echo $list['categories']?></a></li>
 											<?php
 										}
-										?>
-                        
+										?>                    
                                     </ul>
                                 </nav>
-
+                               
                                 <div class="mobile-menu clearfix visible-xs visible-sm">
                                     <nav id="mobile_dropdown">
                                         <ul>
@@ -128,6 +127,7 @@ if($mypage=='login.php'){
 											}
 											?>
                                             <li><a href="contact.php">contact</a></li>
+                                            
                                         </ul>
                                     </nav>
                                 </div>  
@@ -164,6 +164,7 @@ if($mypage=='login.php'){
                 </div>
             </div>
         </header>
+        
 		<div class="body__overlay"></div>
 		<div class="offset__wrapper">
             <div class="search__area">

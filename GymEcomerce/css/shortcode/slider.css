@@ -77,9 +77,10 @@
     transition: all 0.3s ease 0s;
 }
 .cr__btn a:hover {
-    background: rgb(234, 98, 98) none repeat scroll 0 0;
-    color: #fff;
-    border-radius: 10px;;
+  background-color: #ed1c24;
+  color: #fff;
+  border-radius: 10px;
+  border: 2px solid rgb(232, 182, 182);
 }
 .slide__thumb {
     text-align: right;
