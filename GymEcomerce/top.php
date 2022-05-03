@@ -104,17 +104,18 @@ if($mypage=='login.php'){
                             <div class="col-md-7 col-lg-6 col-sm-5 col-xs-3">
                                 <nav class="main__menu__nav hidden-xs hidden-sm">
                                     <ul class="main__menu">
-                                        
+                                        <li class="drop"><a href="index.php">Home</a></li>
                                         <?php
 										foreach($cat_arr as $list){
 											?>
 											<li><a href="categories.php?id=<?php echo $list['id']?>"><?php echo $list['categories']?></a></li>
 											<?php
 										}
-										?>                    
+										?>
+                                        <li><a href="contact.php">contact</a></li>
                                     </ul>
                                 </nav>
-                               
+
                                 <div class="mobile-menu clearfix visible-xs visible-sm">
                                     <nav id="mobile_dropdown">
                                         <ul>
@@ -127,30 +128,59 @@ if($mypage=='login.php'){
 											}
 											?>
                                             <li><a href="contact.php">contact</a></li>
-                                            
                                         </ul>
                                     </nav>
                                 </div>  
                             </div>
                             <div class="col-md-3 col-lg-4 col-sm-4 col-xs-4">
                                 <div class="header__right">
-									<div class="header__search search search__open">
+									<?php 
+									$class="mr15";
+									if(isset($_SESSION['USER_LOGIN'])){
+										$class="";
+									}
+									?>
+									<div class="header__search search search__open <?php echo $class?>">
                                         <a href="#"><i class="icon-magnifier icons"></i></a>
                                     </div>
+									
                                     <div class="header__account">
-                                        <?php if(isset($_SESSION['USER_LOGIN'])){
-											echo '<a href="logout.php">Logout</a> <a href="my_order.php">My Order</a>';
+										<?php if(isset($_SESSION['USER_LOGIN'])){
+											?>
+												<span class="navbar-toggler-icon"></span>
+											  </button>
+
+											  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+												<ul class="navbar-nav mr-auto">
+												  <li class="nav-item dropdown">
+													<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													  Account
+													</a>
+													<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+													  <a class="dropdown-item" href="my_order.php">Order</a>
+													  <a class="dropdown-item" href="profile.php">Profile</a>
+													  <div class="dropdown-divider"></div>
+													  <a class="dropdown-item" href="logout.php">Logout</a>
+													</div>
+												  </li>
+												  
+												</ul>
+											  </div>
+											</nav>
+											<?php
 										}else{
-											echo '<a href="login.php">Login/Register</a>';
+											echo '<a href="login.php" class="mr15">Login/Register</a>';
 										}
 										?>
+									
+                                        
 										
                                     </div>
                                     <div class="htc__shopping__cart">
 										<?php
 										if(isset($_SESSION['USER_ID'])){
 										?>
-										<a href="wishlist.php"><i class="icon-heart icons"></i></a>
+										<a href="wishlist.php" class="mr15"><i class="icon-heart icons"></i></a>
                                         <a href="wishlist.php"><span class="htc__wishlist"><?php echo $wishlist_count?></span></a>
 										<?php } ?>
                                         <a href="cart.php"><i class="icon-handbag icons"></i></a>
@@ -164,7 +194,6 @@ if($mypage=='login.php'){
                 </div>
             </div>
         </header>
-        
 		<div class="body__overlay"></div>
 		<div class="offset__wrapper">
             <div class="search__area">
