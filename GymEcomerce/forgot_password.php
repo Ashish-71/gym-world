@@ -66,6 +66,7 @@ if(isset($_SESSION['USER_LOGIN']) && $_SESSION['USER_LOGIN']=='yes'){
             </div>
         </section>
 		<script>
+	 // below ajac code is to send filled email in forgot_password_submit.php and get result from it
 		function forgot_password(){
 			jQuery('#email_error').html('');
 			var email=jQuery('#email').val();

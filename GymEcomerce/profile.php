@@ -111,6 +111,7 @@ if(!isset($_SESSION['USER_LOGIN'])){
             </div>
         </section>
 		<script>
+			// below ajax code is for send data in update_profile.php and make error validations and get result from update_profile.php
 		function update_profile(){
 			jQuery('.field_error').html('');
 			var name=jQuery('#name').val();
@@ -131,7 +132,7 @@ if(!isset($_SESSION['USER_LOGIN'])){
 				})
 			}
 		}
-		
+ // below code is for make validations in changing password	
 		function update_password(){
 			jQuery('.field_error').html('');
 			var current_password=jQuery('#current_password').val();
@@ -153,7 +154,7 @@ if(!isset($_SESSION['USER_LOGIN'])){
 				jQuery('#confirm_new_password_error').html('Please enter same password');
 				is_error='yes';
 			}
-			
+			//below ajx code is for sending filled data in update_password.php and get result from update_password.php
 			if(is_error==''){
 				jQuery('#btn_update_password').html('Please wait...');
 				jQuery('#btn_update_password').attr('disabled',true);

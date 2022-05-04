@@ -8,6 +8,8 @@ if(!isset($_SESSION['USER_LOGIN'])){
 	</script>
 	<?php
 }
+#below code is to get current password of the user using user id and check whether it is right or not of not then msg other wise
+#  it'll update new password in database
 $current_password=get_safe_value($con,$_POST['current_password']);
 $new_password=get_safe_value($con,$_POST['new_password']);
 $uid=$_SESSION['USER_ID'];
