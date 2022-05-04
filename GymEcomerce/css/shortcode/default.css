@@ -246,6 +246,12 @@ img:last-child {
   margin-bottom: 0;
   margin-left: 0px;
 }
+p + img,
+img:last-child:hover{
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+  transform: translate(0px, -8px);
+  transition: .10s;
+}
 .add_to_cart{
   box-shadow: 0 0 20px rgb(248 251 247 / 68%);
   border: #fff double 4px

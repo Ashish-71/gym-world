@@ -319,11 +319,13 @@ nav.off__canvars--menu ul li ul li a:hover {
 }
 
 .dropdown-item {
-    color: black;
+    color: white;
     font-size: 19px;
     margin-right: 20px;
     padding-right: 20px;
     position: relative;
+    border: white;
+    background-color: #000;
 }
 .header__account a::before {
 
@@ -631,6 +633,7 @@ nav.off__canvars--menu ul li ul li a:hover {
   font-family: Material-Design-Iconic-Font;
   font-size: 29px;
   transition: color 300ms ease 0s;
+  padding: 5px;
 }
 .search__area {
   background: #89999C none repeat scroll 0 0;
@@ -686,7 +689,7 @@ nav.off__canvars--menu ul li ul li a:hover {
 }
 .search__area .search__inner form button {
   background: transparent none repeat scroll 0 0;
-  border: 0 none;
+  border:  none;
   border-radius: 0;
   cursor: pointer;
   height: 60px;
@@ -696,6 +699,8 @@ nav.off__canvars--menu ul li ul li a:hover {
   top: 0;
   width: 60px;
   transition: 0.3s;
+  padding: 0 0 0 ;
+  
 }
 .search__area .search__inner form button:hover {
   background: #c43b68 none repeat scroll 0 0;
