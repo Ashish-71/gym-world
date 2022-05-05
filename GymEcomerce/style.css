@@ -269,6 +269,7 @@
 .fr__pro__prize li.old__prize {
     color: white;
     text-decoration: line-through;
+    opacity: 0.5;
 }
 
 /*---------------------------------------
@@ -508,6 +509,7 @@
     font-weight: 400;
     padding-right: 12px;
     text-decoration: line-through;
+    opacity: 0.5;
 }
 .htc__product__area {
     padding-top: 60px;
