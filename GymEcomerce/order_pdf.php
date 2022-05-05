@@ -46,7 +46,7 @@ $html='<div class="wishlist-table table-responsive">
             <td class="product-name"> <img src="'.PRODUCT_IMAGE_SITE_PATH.$row['image'].'"></td>
             <td class="product-name">'.$row['qty'].'</td>
             <td class="product-name">'.$row['price'].'</td>
-            
+            <td class="product-name">'.$row['address'].'</td>
             <td class="product-name">'.$pp.'</td>
          </tr>';
 		 }

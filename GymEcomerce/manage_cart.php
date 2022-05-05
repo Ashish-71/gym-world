@@ -7,6 +7,18 @@ $pid=get_safe_value($con,$_POST['pid']);
 $qty=get_safe_value($con,$_POST['qty']);
 $type=get_safe_value($con,$_POST['type']);
 
+// below code is navigate the qty stoke
+
+$productSoldQtyByProductId=productSoldQtyByProductId($con,$pid);
+$productQty=productQty($con,$pid);
+
+$pending_qty=$productQty-$productSoldQtyByProductId;
+
+if($qty>$pending_qty){
+	echo "not_avaliable";
+	die();
+}
+
 $obj=new add_to_cart();
 
 if($type=='add'){
