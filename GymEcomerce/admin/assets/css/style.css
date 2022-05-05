@@ -377,6 +377,9 @@
     -webkit-transition: all .2s linear;
     transition: all .2s linear
 }
+.mrp{
+    text-decoration: line-through;
+}
 
 .tdl-holder label a:hover {
     color: rgba(153, 171, 180, .8)
@@ -1634,11 +1637,8 @@ header .form-inline .search-form.close {
     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../../../images/bg/admin.jpg);
     float: left;
     padding: 1.875em;
-    width: 100%;
+    width: 104%;
     background-size: cover;
-
-
-
 }
 
 .card {
