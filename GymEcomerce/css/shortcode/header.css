@@ -98,6 +98,7 @@
 } 
 .logo a{
   display: block;
+  font-size: medium;
 }
 .header__right {
   display: flex;

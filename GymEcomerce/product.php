@@ -57,6 +57,7 @@ if(isset($_GET['id'])){
                                         </div>
                                     </div>
                                 </div>
+                                
                                 <!-- End Product Big Images -->
                                 
                             </div>
@@ -65,8 +66,8 @@ if(isset($_GET['id'])){
                             <div class="ht__product__dtl">
                                 <h2><?php echo $get_product['0']['name']?></h2>
                                 <ul  class="pro__prize">
-                                    <li class="old__prize"><?php echo $get_product['0']['mrp']?></li>
-                                    <li><?php echo $get_product['0']['price']?></li>
+                                    <li>&#x20B9;<?php echo $get_product['0']['price']?></li>&nbsp;
+                                    <li class="old__prize">&#x20B9;<?php echo $get_product['0']['mrp']?></li>
                                 </ul>
                                 <p class="pro__info"><?php echo $get_product['0']['short_desc']?></p>
                                 <div class="ht__pro__desc">
@@ -105,7 +106,7 @@ if(isset($_GET['id'])){
 										<?php } ?>
                                     </div>
                                     <div class="sin__desc align--left">
-                                        <p><span>Categories:</span></p>
+                                        <p><span>CATEGORIES:</span></p>
                                         <ul class="pro__cat__list">
                                             <li><a href="#"><?php echo $get_product['0']['categories']?></a></li>
                                         </ul>

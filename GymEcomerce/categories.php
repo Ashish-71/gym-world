@@ -112,8 +112,8 @@ if($cat_id>0 && ($sub_categories!='' && $sub_categories>0)){
 												<div class="fr__product__inner">
 													<h4><a href="product-details.html"><?php echo $list['name']?></a></h4>
 													<ul class="fr__pro__prize">
-														<li class="old__prize"><?php echo $list['mrp']?></li>
-														<li><?php echo $list['price']?></li>
+														<li>&#x20B9;<?php echo $list['price']?></li>
+														<li class="old__prize">&#x20B9;<?php echo $list['mrp']?></li>
 													</ul>
 												</div>
 											</div>

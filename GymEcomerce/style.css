@@ -1386,7 +1386,7 @@
     align-items: center;
     display: flex;
     height: 270px;
-    background: linear-gradient( rgba(18, 18, 18, 0.7), rgba(0, 0, 0, 0.7) ), url(../GymEcomerce/images/bg/banner3.jpg );
+    background-image:url(../GymEcomerce/images/bg/banner3.jpg );
 }
 .breadcrumb-item {
     color: #fff;
@@ -1906,14 +1906,15 @@ select.ht__select {
     font-size: 16px;
     font-weight: 400;
     text-transform: capitalize;
-    margin: 0;
+    margin: 0 0 13px 0px ;
+
 }
 .sin__desc p span {
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     text-transform: capitalize;
-}
+}  
 .pro__color {
     display: flex;
     margin-left: 10px;
@@ -2008,7 +2009,7 @@ select.ht__select {
 }
 .pro__details__tab {
     align-items: center;
-    border-color: #e1e1e1;
+    border-color: #000;
     border-style: solid;
     border-width: 1px;
     display: flex;
@@ -2031,10 +2032,11 @@ select.ht__select {
     border-left: 1px solid #e1e1e1;
 }
 .pro__details__tab li:last-child {
-    border-right: 1px solid #e1e1e1;
+    border-right: 1px solid #000;
 }
 .pro__details__tab li.active a {
-    color: #333333;
+    color: #fff;
+    text-transform: uppercase;
 }
 .pro__details__tab li a:hover {
     color: #333333;
@@ -2887,23 +2889,20 @@ a.shipping-calculator-button:hover{
     text-transform: uppercase;
     transition: all 0.5s ease-out 0s;
 }
-.frg-btn{
-    content: ' ';
+.forgot_password{
     background-color: #cf1b57;
     border: #cf1b57 solid 2px;
     color: white;
-    padding: 10px 6px;
+    padding: 8px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    height: 46px;
     text-transform: uppercase;
-    margin: 0 0 0 0px;
     transition: all 0.5s ease-out 0s;
-    
 }
-.frg-btn:hover{
+.forgot_password:hover{
+    
     background-color: #ed1c24;
     color: #fff;
     border-radius: 10px;
@@ -3651,20 +3650,22 @@ ul.htc__instagram__posts.owl-carousel li img {
     border: #fff double 4px;
     box-shadow: 0 0 20px rgb(248 251 247 / 68%);
     border-radius: 5px;
-    height: 324px;
+    height: 322px;
    
 }
 .ht__cat__thumb a img:hover{
-    box-shadow: 0 0 1px rgba(107, 101, 101, 0.2);
-      transform: translate(10px 10px 10px 10px);
+      box-shadow: 0 0 9px rgba(107, 101, 101, 0.2);
+      transform: translate(0px 0px 0px 0px);
       transition: .5s;
 }
 .slick-initialized .slick-slide {
     outline: none;
 }
 .email_verify_otp{display:none;}
-.height_60px{height:62px;
-margin-bottom: -77px;}
+.height_60px{
+    height:62px;
+    margin-bottom: -77px;
+}
 #email_otp_result{
 	margin-top: 15px;
     font-size: 20px;
