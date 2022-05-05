@@ -55,13 +55,13 @@ $res=mysqli_query($con,$sql);
 							$i=1;
 							while($row=mysqli_fetch_assoc($res)){?>
 							<tr>
-							   <td class="serial"><?php echo $i?></td>
+							   <td class="serial"><?php echo $i++?></td>
 							   <td><?php echo $row['id']?></td>
 							   <td><?php echo $row['categories']?></td>
 							   <td><?php echo $row['name']?></td>
 							   <td><img src="<?php echo PRODUCT_IMAGE_SITE_PATH.$row['image']?>"/></td>
-							   <td><?php echo $row['mrp']?></td>
-							   <td><?php echo $row['price']?></td>
+							   <td class="mrp">&#x20B9;<?php echo $row['mrp']?></td>
+							   <td>&#x20B9;<?php echo $row['price']?></td>
 							   <td><?php echo $row['qty']?><br/>
 							   <?php
 							   $productSoldQtyByProductId=productSoldQtyByProductId($con,$row['id']);
