@@ -280,6 +280,7 @@ nav.off__canvars--menu ul li ul li a:hover {
     color: white;
     font-size: 19px;
     position: relative;
+    
 }
 
 .htc__shopping__cart {
@@ -304,8 +305,9 @@ nav.off__canvars--menu ul li ul li a:hover {
 }
 .header__search a {
   padding-right: 20px;
-  position: relative;
+  position: fixed;
   margin-right: 20px;
+  margin: -12px 0 0 -30px ;
 }
 .header__search a::before {
 

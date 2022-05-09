@@ -1,9 +1,16 @@
 <?php 
 require('top.php');
-if(!isset($_SESSION['cart']) || count($_SESSION['cart'])==0){
+if(count($_SESSION['cart'])==0){
 	?>
 	<script>
 		window.location.href='index.php';
+	</script>
+	<?php
+}
+if(!isset($_SESSION['USER_LOGIN'])){
+	?>
+	<script>
+		window.location.href='login.php';
 	</script>
 	<?php
 }
@@ -181,29 +188,7 @@ if(isset($_POST['submit'])){
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="checkout-method__login">
-                                                        <form action="#">
-                                                            <h5 class="checkout-method__title">Register</h5>
-                                                            <div class="single-input">
-                                                                <input type="text" name="name" id="name" placeholder="Your Name*" style="width:100%">
-																<span class="field_error" id="name_error"></span>
-                                                            </div>
-															<div class="single-input">
-                                                                <input type="text" name="email" id="email" placeholder="Your Email*" style="width:100%">
-																<span class="field_error" id="email_error"></span>
-                                                            </div>
-															
-                                                            <div class="single-input">
-                                                                <input type="text" name="mobile" id="mobile" placeholder="Your Mobile*" style="width:100%">
-																<span class="field_error" id="mobile_error"></span>
-                                                            </div>
-															<div class="single-input">
-                                                                <input type="password" name="password" id="password" placeholder="Your Password*" style="width:100%">
-																<span class="field_error" id="password_error"></span>
-                                                            </div>
-                                                            <div class="dark-btn">
-                                                                <button type="button" class="fv-btn" onclick="user_register()">Register</button>
-                                                            </div>
-                                                        </form>
+                                                      
                                                     </div>
                                                 </div>
                                             </div>

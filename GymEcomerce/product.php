@@ -52,7 +52,7 @@ if(isset($_GET['id'])){
                                 <!-- Start Product Big Images -->
                                 <div class="product__big__images">
                                     <div class="portfolio-full-image tab-content">
-                                        <div role="tabpanel" class="tab-pane fade in active" id="img-tab-1">
+                                        <div role="tabpanel" class="product-image" id="img-tab-1">
                                             <img src="<?php echo PRODUCT_IMAGE_SITE_PATH.$get_product['0']['image']?>">
                                         </div>
                                     </div>

@@ -201,7 +201,7 @@ if($mypage=='login.php'){
 											</nav>
 											<?php
 										}else{
-											echo '<a href="login.php" class="mr15">Login/Register</a>';
+											echo '<a href="login.php" class="mr15">Register</a>';
 										}
 										?>
 									

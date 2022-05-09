@@ -2016,7 +2016,10 @@ select.ht__select {
     border-width: 1px;
     display: flex;
     margin-bottom: 28px;
+    
 }
+
+
 .pro__details__tab li {
     height: 45px;
     line-height: 45px;
@@ -3363,10 +3366,12 @@ ul.htc__instagram__posts.owl-carousel li img {
 }
 .accordion__body__form .checkout-method .checkout-method__single .single-input input[type="radio"]{
     margin-right: 10px;
+    margin: 0 0 0 1px;
 }
 .accordion__body .checkout-method__login p.require{
     color: #f10;
     letter-spacing: 1px;
+    
 }
 .accordion__body .checkout-method__login .single-input{
     margin-bottom: 20px;
