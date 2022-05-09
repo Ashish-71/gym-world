@@ -337,7 +337,13 @@
 .tdl-holder li:before {
     left: 14px
 }
-
+.shiprocket_error{
+    padding: 32px;
+    padding-bottom: 0px;
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+}
 .tdl-holder li span {
     margin-left: 30px;
     vertical-align: middle;
