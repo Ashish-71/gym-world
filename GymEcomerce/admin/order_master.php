@@ -1,8 +1,5 @@
 <?php
 require('top.inc.php');
-
-$sql="select * from users order by id desc";
-$res=mysqli_query($con,$sql);
 ?>
 <div class="content pb-0">
 	<div class="orders">
@@ -23,11 +20,12 @@ $res=mysqli_query($con,$sql);
 									<th class="product-stock-stauts"><span class="nobr"> Payment Type </span></th>
 									<th class="product-stock-stauts"><span class="nobr"> Payment Status </span></th>
 									<th class="product-stock-stauts"><span class="nobr"> Order Status </span></th>
+									<th class="product-stock-stauts"><span class="nobr"> Shipment Details </span></th>
 								</tr>
 							</thead>
 							<tbody>
 								<?php
-								$res=mysqli_query($con,"select `order`.*,order_status.name as order_status_str from `order`,order_status where order_status.id=`order`.order_status");
+								$res=mysqli_query($con,"select `order`.*,order_status.name as order_status_str from `order`,order_status where order_status.id=`order`.order_status order by `order`.id desc");
 								while($row=mysqli_fetch_assoc($res)){
 								?>
 								<tr>
@@ -42,6 +40,12 @@ $res=mysqli_query($con,$sql);
 									<td class="product-name"><?php echo $row['payment_type']?></td>
 									<td class="product-name"><?php echo $row['payment_status']?></td>
 									<td class="product-name"><?php echo $row['order_status_str']?></td>
+									<td class="product-name">
+									<?php 
+									echo "Order Id:- ".$row['ship_order_id'].'<br/>';
+									echo "Shipment Id:- ".$row['ship_shipment_id'];
+									
+									?></td>
 									
 								</tr>
 								<?php } ?>
