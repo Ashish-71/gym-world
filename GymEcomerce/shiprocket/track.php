@@ -10,7 +10,7 @@ $curl = curl_init();
     CURLOPT_FOLLOWLOCATION => true,
     CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
     CURLOPT_HTTPHEADER => array(
-	   "Authorization: Bearer TOKEN"
+	   "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjI2MTk4OTcsImlzcyI6Imh0dHBzOi8vYXBpdjIuc2hpcHJvY2tldC5pbi92MS9leHRlcm5hbC9hdXRoL2xvZ2luIiwiaWF0IjoxNjUxODE1ODI5LCJleHAiOjE2NTI2Nzk4MjksIm5iZiI6MTY1MTgxNTgyOSwianRpIjoicmJnSExwbTAzWEYzQldPbCJ9.KzsxEpy8WBsqRbpRaHk6OA4X3PQ7DwNDEaeekVBCqUM"
     ),
   ));
   $SR_login_Response = curl_exec($curl);
