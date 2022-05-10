@@ -8,6 +8,10 @@ if(!isset($_SESSION['USER_LOGIN'])){
 	<?php
 }
 $order_id=get_safe_value($con,$_GET['id']);
+
+$coupon_details=mysqli_fetch_assoc(mysqli_query($con,"select coupon_value from `order` where id='$order_id'"));
+$coupon_value=$coupon_details['coupon_value'];
+
 ?>
 <div class="ht__bradcaump__area" style="background: rgba(0, 0, 0, 0) url(images/bg/4.jpg) no-repeat scroll center center / cover ;">
             <div class="ht__bradcaump__wrap">
@@ -61,11 +65,23 @@ $order_id=get_safe_value($con,$_GET['id']);
 												<td class="product-name"><?php echo $row['qty']*$row['price']?></td>
                                                 
                                             </tr>
-                                            <?php } ?>
+                                            <?php } 
+											if($coupon_value!=''){
+											?>
+											<tr>
+												<td colspan="3"></td>
+												<td class="product-name">Coupon Value</td>
+												<td class="product-name"><?php echo $coupon_value?></td>
+                                                
+                                            </tr>
+											<?php } ?>
 											<tr>
 												<td colspan="3"></td>
 												<td class="product-name">Total Price</td>
-												<td class="product-name"><?php echo $total_price?></td>
+												<td class="product-name">
+												<?php 
+												echo $total_price-$coupon_value;
+												?></td>
                                                 
                                             </tr>
                                         </tbody>
