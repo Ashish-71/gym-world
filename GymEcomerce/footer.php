@@ -86,7 +86,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="copyright__inner">
-                                <p>Copyright© Ashish Soni & Shrey Patel</p>
+                                <p>Copyright© Fitness Center</p>
                                 <a href="#"><img src="images/others/shape/paypol.png" alt="payment images"></a>
                             </div>
                         </div>
