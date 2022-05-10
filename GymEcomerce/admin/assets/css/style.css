@@ -455,7 +455,7 @@ a,
 button {
     text-decoration: none;
     outline: none!important;
-    color: #878787;
+    color: #fff;
     -webkit-transition: all .25s ease;
     transition: all .25s ease
 }
@@ -463,7 +463,7 @@ button {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #000
+    color: #dc3545;
 }
 
 h1,
