@@ -123,7 +123,7 @@ function placeShipRocketOrder($con,$token,$order_id){
 		CURLOPT_CUSTOMREQUEST => "POST",
 		CURLOPT_POSTFIELDS =>'{"order_id": "'.$order_id.'",
 	  "order_date": "'.$order_date.'",
-	  "pickup_location": "Delhi",
+	  "pickup_location": "Ahmedabad",
 	  "billing_customer_name": "'.$name.'",
 	  "billing_last_name": "",
 	  "billing_address": "'.$address.'",
@@ -167,7 +167,7 @@ function placeShipRocketOrder($con,$token,$order_id){
   $SR_login_Response = curl_exec($curl);
   curl_close($curl);
   $SR_login_Response_out = json_decode($SR_login_Response,true);
-  
+ 
   if(isset($SR_login_Response_out['order_id']) && isset($SR_login_Response_out['shipment_id'])){
 	  $ship_order_id=$SR_login_Response_out['order_id'];
 	  $ship_shipment_id=$SR_login_Response_out['shipment_id'];
