@@ -1,6 +1,9 @@
 <?php
 require('top.inc.php');
 $order_id=get_safe_value($con,$_GET['id']);
+$coupon_details=mysqli_fetch_assoc(mysqli_query($con,"select coupon_value,coupon_code from `order` where id='$order_id'"));
+$coupon_value=$coupon_details['coupon_value'];
+$coupon_code=$coupon_details['coupon_code'];
 if(isset($_POST['update_order_status'])){
 	$update_order_status=$_POST['update_order_status'];
 	
@@ -78,11 +81,25 @@ if(isset($_POST['update_order_status'])){
 										<td class="product-name"><?php echo $row['qty']*$row['price']?></td>
 										
 									</tr>
+									<?php } 
+									if($coupon_value!=''){
+									?>
+									<tr>
+										<td colspan="3"></td>
+										<td class="product-name">Coupon Value</td>
+										<td class="product-name">
+										<?php 
+										echo $coupon_value."($coupon_code)";
+										?></td>
+										
+									</tr>
 									<?php } ?>
 									<tr>
 										<td colspan="3"></td>
 										<td class="product-name">Total Price</td>
-										<td class="product-name"><?php echo $total_price?></td>
+										<td class="product-name"><?php 
+												echo $total_price-$coupon_value;
+												?></td>
 										
 									</tr>
 								</tbody>
@@ -111,10 +128,10 @@ if(isset($_POST['update_order_status'])){
 									<div id="shipped_box" style="display:none">
 										<table>
 											<tr>
-												<td><label>length</label><input type="text" class="form-control" name="length" placeholder="length"/></td>
-												<td><label>breadth</label><input type="text" class="form-control" name="breadth" placeholder="Breadth"/></td>
-												<td><label>height</label><input type="text" class="form-control" name="height" placeholder="height"/></td>
-												<td><label>weight</label><input type="text" class="form-control" name="weight" placeholder="weight"/></td>
+												<td><input type="text" class="form-control" name="length" placeholder="length"/></td>
+												<td><input type="text" class="form-control" name="breadth" placeholder="Breadth"/></td>
+												<td><input type="text" class="form-control" name="height" placeholder="height"/></td>
+												<td><input type="text" class="form-control" name="weight" placeholder="weight"/></td>
 											</tr>
 										</table>
 									</div>
