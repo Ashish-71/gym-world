@@ -313,14 +313,15 @@
     margin-bottom: 38px;
 }
 .fr__btn {
-   background-color: #cf1b57; /* Green */
+  background-color: #cf1b57; 
   border: #cf1b57 solid 2px;
   color: white;
-  padding: 15px 32px;
+  padding: 5px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+
 }   
 .fr__btn:hover{
     background-color: #ed1c24;
