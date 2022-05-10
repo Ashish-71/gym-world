@@ -106,9 +106,9 @@ if(isset($_POST['update_order_status'])){
 							
 						</table>
 						<div id="address_details">
-							<strong>Address</strong>
+							<strong>Address:- </strong>
 							<?php echo $address?>, <?php echo $city?>, <?php echo $pincode?><br/><br/>
-							<strong>Order Status</strong>
+							<strong>Order Status:- </strong>
 							<?php 
 							$order_status_arr=mysqli_fetch_assoc(mysqli_query($con,"select order_status.name,order_status.id as order_status from order_status,`order` where `order`.id='$order_id' and `order`.order_status=order_status.id"));
 							echo $order_status_arr['name'];
@@ -128,14 +128,14 @@ if(isset($_POST['update_order_status'])){
 									<div id="shipped_box" style="display:none">
 										<table>
 											<tr>
-												<td><input type="text" class="form-control" name="length" placeholder="length"/></td>
-												<td><input type="text" class="form-control" name="breadth" placeholder="Breadth"/></td>
-												<td><input type="text" class="form-control" name="height" placeholder="height"/></td>
-												<td><input type="text" class="form-control" name="weight" placeholder="weight"/></td>
+										    <td><label>length</label><input type="text" class="form-control" name="length"/></td>
+											<td><label>bredth</label><input type="text" class="form-control" name="breadth"/></td>
+											<td><label>height</label><input type="text" class="form-control" name="height"/></td>
+											<td><label>weight</label><input type="text" class="form-control" name="weight"/></td>
 											</tr>
 										</table>
 									</div>
-									<input type="submit" class="form-control"/>
+									<input type="submit" class="submit-btn"/>
 								</form>
 							</div>
 						</div>

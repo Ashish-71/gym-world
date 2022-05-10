@@ -418,7 +418,7 @@ nav.off__canvars--menu ul li ul li a:hover {
 }
 .main__menu ul.dropdown li a {
     background: #ffffff none repeat scroll 0 0;
-    color: #333;
+    color: #000;
     display: block;
     font-size: 13px;
     font-weight: 400;

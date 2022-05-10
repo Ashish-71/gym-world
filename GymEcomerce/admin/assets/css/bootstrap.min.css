@@ -375,6 +375,26 @@ pre code{font-size:inherit;color:inherit;word-break:normal}
 .table-responsive{display:block;width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;-ms-overflow-style:-ms-autohiding-scrollbar}
 .table-responsive>.table-bordered{border:0}
 .form-control{display:block;width:100%;height:calc(2.25rem + 2px);padding:.375rem .75rem;font-size:1rem;line-height:1.5;color:#fff;background-color:#000;background-clip:padding-box;box-shadow:0 0 10px #fff;border:1px solid #ced4da;border-radius:.25rem;transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out}
+.submit-btn{
+    background: #c43b68 none repeat scroll 0 0;
+    color: #fff;
+    display: inline-block;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 400;
+    height: 50px;
+    line-height: 49px;
+    padding: 0 36px;
+    text-transform: capitalize;
+    transition: all 0.3s ease 0s;
+}
+.submit-btn:hover{
+    background-color: #ed1c24;
+    color: #fff;
+    border-radius: 10px;
+    border: 2px solid rgb(232, 182, 182);
+
+}
 @media screen and (prefers-reduced-motion:reduce){.form-control{transition:none}
 }
 .form-control::-ms-expand{background-color:transparent;border:0}

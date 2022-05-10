@@ -136,6 +136,7 @@ if(isset($_GET['id'])){
                     <div class="col-xs-12">
                         <!-- Start List And Grid View -->
                         <ul class="pro__details__tab" role="tablist">
+                        <a href="#"><i class="fa far fa-list-alt"></i></a>
                             <li role="presentation" class="description active"><a href="#description" role="tab" data-toggle="tab">description</a></li>
                         </ul>
                         <!-- End List And Grid View -->
