@@ -1,7 +1,6 @@
 <?php
 require('connection.inc.php');
 require('functions.inc.php');
-
 if(isset($_SESSION['ADMIN_LOGIN']) && $_SESSION['ADMIN_LOGIN']!=''){
 
 }else{
@@ -36,7 +35,7 @@ if(isset($_SESSION['ADMIN_LOGIN']) && $_SESSION['ADMIN_LOGIN']!=''){
                   <li class="menu-item-has-children dropdown">
                      <a href="categories.php" > Categories Master</a>
                   </li>
-                  <li class="menu-item-has-children dropdown">
+				  <li class="menu-item-has-children dropdown">
                      <a href="sub_categories.php" > Sub Categories Master</a>
                   </li>
                   <li class="menu-item-has-children dropdown">
@@ -49,9 +48,11 @@ if(isset($_SESSION['ADMIN_LOGIN']) && $_SESSION['ADMIN_LOGIN']!=''){
                      <a href="users.php" > User Master</a>
                   </li>
 				  <li class="menu-item-has-children dropdown">
+                     <a href="coupon_master.php" > Coupon Master</a>
+                  </li>
+				  <li class="menu-item-has-children dropdown">
                      <a href="contact_us.php" > Contact Us</a>
                   </li>
-                 
 				  
                </ul>
             </div>
@@ -61,8 +62,8 @@ if(isset($_SESSION['ADMIN_LOGIN']) && $_SESSION['ADMIN_LOGIN']!=''){
          <header id="header" class="header">
             <div class="top-left">
                <div class="navbar-header">
-                  <a class="navbar-brand" href="index.php"><img src="../images/logo.jpg" alt="Logo"></a>
-                  <a class="navbar-brand hidden" href="index.php"><img src="images/5.png" alt="Logo"></a>
+                  <a class="navbar-brand" href="index.php"><img src="../images/logo/5.png" alt="Logo"></a>
+                  <a class="navbar-brand hidden" href="index.php"><img src="images/logo2.png" alt="Logo"></a>
                   <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
                </div>
             </div>
