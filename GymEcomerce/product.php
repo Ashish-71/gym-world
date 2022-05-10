@@ -18,6 +18,7 @@ if(isset($_GET['id'])){
 	</script>
 	<?php
 }
+
 ?>
 
  <!-- Start Bradcaump area -->
