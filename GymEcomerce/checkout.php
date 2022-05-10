@@ -119,7 +119,7 @@ if(isset($_POST['submit'])){
 		echo $formHtml;
 		echo '<script>document.getElementById("payuForm").submit();</script>';
 	}else{	
-
+		sentInvoice($con,$order_id);
 		?>
 		<script>
 			window.location.href='thank_you.php';
